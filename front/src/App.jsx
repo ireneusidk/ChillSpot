@@ -57,7 +57,7 @@ function AppContent() {
           <Route path="/form" element={<ProtectedRoute element={<PostForm />} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<ProtectedRoute element={<Profile/>} />} />
+          <Route path="/protegida" element={<ProtectedRoute element={<Protegida/>} />} />
           <Route path="/chillcorner" element={<Game />} />
           <Route path="/about" element={<About />} />
           <Route path="/policies" element={<Policies />} />
