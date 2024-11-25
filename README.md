@@ -80,10 +80,13 @@ Posts:
 
 GET /api/posts
 Obtiene todos los posts en orden descendente por fecha de creación.
+
 POST /api/posts
 Crea un nuevo post y lo guarda en la base de datos.
+
 DELETE /api/posts/:id
 Elimina un post identificado por su id.
+
 PUT /api/posts/:id
 Actualiza un post identificado por su id.
 
@@ -91,8 +94,10 @@ Usuarios:
 
 POST /api/user/login
 Inicia sesión con un usuario registrado.
+
 POST /api/user/register
 Registra un nuevo usuario en la base de datos.
+
 POST /api/user/logout
 Cierra sesión del usuario autenticado.
 
