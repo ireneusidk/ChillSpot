@@ -12,7 +12,9 @@ Frontend: React, React Router, CSS.
 Autenticación: CORS y Express Sessions.
 
 🛠 Estructura del Proyecto
+
 Frontend: Código dentro de la carpeta front/.
+
 Backend: Código dentro de la carpeta back/.
 
 ⚙️ Instalación
