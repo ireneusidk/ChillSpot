@@ -106,6 +106,7 @@ Cierra sesión del usuario autenticado.
 🔧 Configuraciones Adicionales
 
 CORS: Configura el origin para aceptar peticiones del frontend desplegado en Render.
+
 Sesiones: Utiliza cookies para gestionar el inicio de sesión.
 
 -------------------------------------------------------------------------------------------------------------------------
