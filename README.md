@@ -62,13 +62,21 @@ npm start
 
 Posteos:
 Inicio: Visualiza todos los posts creados.
+
 Editar: Modifica el título y el cuerpo del post.
+
 Crear: Publica un nuevo post con título, imagen (URL) y descripción.
+
 Eliminar: Borra un post completamente.
+
 Autenticación:
+
 Registro: Crea una cuenta con nombre y contraseña.
+
 Inicio de sesión: Accede a secciones protegidas y publica contenido.
+
 Cerrar sesión: Sal del sistema y navega en modo invitado.
+
 Extras:
 ChillCorner: Juega minijuegos mientras navegas por la página.
 
