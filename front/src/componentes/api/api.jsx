@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'http://192.168.0.138:8080/api' || 'https://chillspot-84lu.onrender.com/api',
+baseURL: process.env.NODE_ENV === 'production'
+  ? 'https://chillspot-84lu.onrender.com/api' // En producción
+  : 'http://192.168.0.138:8080/api',          // En desarrollo
   withCredentials: true
 });
 const getUserProfile = async () => {
