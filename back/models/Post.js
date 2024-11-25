@@ -3,18 +3,18 @@ const Schema = mongoose.Schema;
 
 const postSchema = new Schema(
   {
-    author: { type: String, required: true },
-    title: { type: String, required: true },
-    content: { type: String, required: true },
-    createdAt: {
+     author: { type: String, required: true },
+     title: { type: String, required: true },
+     content: { type: String, required: true },
+     createdAt: {
       type: Date,
-      default: Date.now, // Asignar la fecha actual por defecto
+      default: Date.now, 
   },
-    image: { type: String, required: true },
-    likes: { type: Number, default: 0 }, // Campo para los "Me gusta"
-    likedBy: { type: [String], default: [] } // Lista de IDs de usuarios que han dado "Me gusta"
+     image: { type: String, required: true },
+     likes: { type: Number, default: 0 }, //likes en total
+     likedBy: { type: [String], default: [] } //funcion que aun no esta implementada
   },
-  { timestamps: true } // Asegúrate de que el modelo tenga timestamps para manejar createdAt y updatedAt
+  { timestamps: true } 
 );
 
 const Post = mongoose.model('Post', postSchema);
