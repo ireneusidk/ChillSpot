@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-baseURL: 'https://chillspot-84lu.onrender.com:8080/api', // En desarrollo
+baseURL: 'https://chillspot-84lu.onrender.com/api', // En desarrollo
   withCredentials: true
 });
 const getUserProfile = async () => {
