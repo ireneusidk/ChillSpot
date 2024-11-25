@@ -21,13 +21,14 @@ app.use(session({
     // httpOnly: true
   }
 }));
-app.use(cors(corsOptions));
 const corsOptions = {
   origin: 'https://chillspot-front.onrender.com', // Permitir solicitudes solo desde este dominio
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
   allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
   credentials: true, // Permitir el envío de cookies (importante para sesiones)
 };
+app.use(cors(corsOptions));
+
 
 // const allowedOrigins = ['http://localhost:4173', 'http://192.168.0.138:4173', process.env.CLIENT_ORIGIN,].filter(Boolean);;
 // app.use(cors({
