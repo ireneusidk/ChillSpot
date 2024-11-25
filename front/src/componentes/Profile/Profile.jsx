@@ -20,10 +20,10 @@ const Profile = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await api.get('/users'); // Cambié a /user para que coincida con la ruta en el backend
+        const response = await api.get('/users'); 
         setUserData({
-          username: response.data.username || "",  // Asegúrate de que los datos estén disponibles
-          id: response.data.id || null, // Asegúrate de que el id esté presente
+          username: response.data.username || "",  
+          id: response.data.id || null, 
         });
         setLoading(false);
       } catch (error) {
