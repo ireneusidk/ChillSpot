@@ -41,7 +41,7 @@ const Menu = () => {
       <ul>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/form">Publicar</Link></li>
-        <li><Link to="/profile">Sección protegida</Link></li>
+        <li><Link to="/protegida">Sección protegida</Link></li>
         <li><Link to="/chillcorner">ChillCorner</Link></li>
         <li><button onClick={handleLogout} className="Button"><i className="fa fa-sign-out" aria-hidden="true"></i>Cerrar sesión</button></li>
         <li>
