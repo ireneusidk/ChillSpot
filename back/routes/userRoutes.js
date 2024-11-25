@@ -128,17 +128,6 @@ router.post('/logout', (req, res) => {
     res.status(200).send('Sesión cerrada');
   });
 
-  router.get('/users', async (req, res) => {
-    try {
-      const user = await User.findById(req.session.user.id);  // Accede a la sesión
-      if (!user) {
-        return res.status(404).json({ message: 'Usuario no encontrado' });
-      }
-      res.json(user);  // Retorna la información del usuario
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: 'Error al obtener los datos del usuario' });
-    }
-  });
+
   
 module.exports = router;
