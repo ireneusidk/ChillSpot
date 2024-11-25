@@ -22,7 +22,7 @@ const Login = () => {
       await api.post('/users/login', { username, password });
       
       login(); // Llama a `login` desde el contexto para actualizar el estado de autenticación
-      navigate('/profile'); // Redirige al usuario a la página protegida (o la que desees)
+      navigate('/protegida'); // Redirige al usuario a la página protegida (o la que desees)
     } catch (error) {
       // Si hay un error, muestra una alerta con el mensaje del error
       alert('Error al ingresar: ' + (error.response?.data || error.message));
