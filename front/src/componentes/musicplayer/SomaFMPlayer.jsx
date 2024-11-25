@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SomaFm.css"
+import "./SomaFm.css";
 function SomaFMPlayer() {
   return (
     <div className='aa'>
