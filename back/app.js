@@ -22,29 +22,14 @@ app.use(session({
   }
 }));
 const corsOptions = {
-  origin: 'https://chillspot-front.onrender.com', // Permitir solicitudes solo desde este dominio
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
+  origin: 'https://chillspot-front.onrender.com', // Permitir solicitudes solo desde el front de render
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Metodos HTTP permitidos
   allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
-  credentials: true, // Permitir el envío de cookies (importante para sesiones)
+  credentials: true, // Permitir el envío de cookies 
 };
 app.use(cors(corsOptions));
 
-
-// const allowedOrigins = ['http://localhost:4173', 'http://192.168.0.138:4173', process.env.CLIENT_ORIGIN,].filter(Boolean);;
-// app.use(cors({
-//   origin: (origin, callback) => {
-//     if (!origin || allowedOrigins.includes(origin)) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error('Origen no permitido por CORS'));
-//     }
-//   },
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   allowedHeaders: ['Content-Type', 'Authorization'],
-//   credentials: true, // Necesario para manejar cookies
-// }));
 // Rutas
-app.use('/api/user', userRoutes); 
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 
