@@ -1,4 +1,5 @@
 ChillSpot 🎮🎨
+
 ChillSpot es una página web estilo red social enfocada en el arte y el gaming. Permite a los usuarios compartir imágenes acompañadas de comentarios sobre sus "obras de arte" o jugadas que quieran mostrar a la comunidad.
 
 🚀 Detalles Técnicos
