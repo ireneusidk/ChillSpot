@@ -1,0 +1,7 @@
+.cuadro{
+    border: solid 1px rgb(23, 196, 202);
+}
+
+#gameCanvas{
+    margin-top: 2rem;
+}

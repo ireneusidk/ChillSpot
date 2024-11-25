@@ -1,0 +1,187 @@
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #fefefe;
+  --button-bg-color-light: #f0f0f0;
+  --button-text-color-light: #000000;
+
+  --bg-color-dark: #121212;
+  --text-color-dark: #ffffff;
+  --button-bg-color-dark: #3b3b3b;
+  --button-text-color-dark: #cec9c9;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode article, 
+body.dark-mode main, 
+body.dark-mode p {
+  color: var(--text-color-dark); 
+}
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.light-mode {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+body.light-mode article, 
+body.light-mode main, 
+body.light-mode p {
+  color: var(--text-color-light); 
+  padding: 0;
+  margin: 0;
+}
+button {
+  background-color: var(--button-bg-color-light);
+  color: var(--button-text-color-light);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode button {
+  background-color: var(--button-bg-color-dark);
+  color: var(--button-text-color-dark);
+}
+
+.background-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Estilos comunes para las formas */
+.shape {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 15s infinite linear;
+}
+
+/* Especificaciones para cada forma */
+.square,
+.triangle,
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #ff57cd;
+  /* Color base de los elementos */
+}
+
+/* Triángulo */
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Círculo */
+.circle {
+  border-radius: 50%;
+}
+
+/* Variantes de posición y duración */
+.shape:nth-child(1) { width: 40px; height: 40px; left: 90%; animation-duration: 8s; }
+.shape:nth-child(2) { width: 20px; height: 20px; left: 20%; animation-duration: 5s; animation-delay: 1s; }
+.shape:nth-child(3) { width: 50px; height: 50px; left: 35%; animation-duration: 7s; animation-delay: 2s; }
+.shape:nth-child(4) { width: 80px; height: 80px; left: 50%; animation-duration: 11s; animation-delay: 0s; }
+.shape:nth-child(5) { width: 35px; height: 35px; left: 55%; animation-duration: 6s; animation-delay: 1s; }
+.shape:nth-child(6) { width: 45px; height: 45px; left: 65%; animation-duration: 8s; animation-delay: 3s; }
+.shape:nth-child(7) { width: 90px; height: 90px; left: 70%; animation-duration: 12s; animation-delay: 2s; }
+.shape:nth-child(8) { width: 25px; height: 25px; left: 80%; animation-duration: 6s; animation-delay: 2s; }
+.shape:nth-child(9) { width: 15px; height: 15px; left: 70%; animation-duration: 5s; animation-delay: 1s; }
+.shape:nth-child(10) { width: 90px;height: 90px;left: 25%;animation-duration: 10s;animation-delay: 4s; }
+.shape:nth-child(11) { width: 90px;height: 90px;left: 5%;animation-duration: 10s; }
+
+/* Animación para que las formas floten hacia arriba */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    /* Empieza desde fuera de la pantalla */
+  }
+
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    /* Termina fuera de la pantalla por la parte superior */
+  }
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+/* 
+button:hover {
+  border-color: #646cff;
+} */
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.neon-text {
+  font-family: 'Press Start 2P', cursive;
+  color: #00f2ff;
+  text-shadow: 0 0 5px #00f2ff, 0 0 10px #00f2ff, 0 0 20px #00f2ff, 0 0 40px #00f2ff, 0 0 80px #00f2ff;
+} */
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* Fondo oscuro para botones */
+.Boton {
+  background-color: transparent;
+  border: 2px solid #ff007f; /* Color neón rosa */
+  color: #ff007f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Boton:hover {
+  background-color: #ff007f;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 0, 127, 0.7); /* Brillo rosa */
+}
+/* Estilo de menú hamburguesa */
+.hamburger div {
+  width: 25px;
+  height: 4px;
+  background-color: #00f2ff; /* Color neon */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger1 div {
+  width: 25px;
+  height: 4px;
+  background-color: #00f2ff; /* Color neon */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+/* Fondo y bordes de los enlaces con neón */
+.nav-links a {
+  text-decoration: none;
+  color: #f4a261; /* Un color cálido, como naranja neón */
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+.Button:hover, .Boton:hover {
+  background-color: #00f2ff;
+  color: #121212; /* Fondo de color oscuro al hacer hover */
+  box-shadow: 0px 0px 10px rgba(0, 242, 255, 0.6); /* Brillo al pasar el ratón */
+}

@@ -1,0 +1,65 @@
+.post {
+    background-color: #f7a9ef6e; 
+    border: 2px solid #000000;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+    padding: 15px; 
+    max-width: 600px;
+}
+
+/* Estilos para el encabezado del post */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+/* Estilo para el título del post */
+.post-title {
+    padding-right: 2rem;
+    font-size: 1.5em; 
+    color: #2D2D2D; 
+    margin: 0; 
+}
+
+/* Estilo para la fecha del post */
+.post-date {
+    font-size: 0.9em; 
+    color: #777777; 
+}
+
+/* Estilos para el contenido del post */
+.post-content {
+    margin: 15px 0; 
+}
+
+/* Estilo para las imágenes del post */
+.post-image {
+    width: 100%; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+
+/* Estilos para el pie del post */
+.post-footer {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* Estilo para los botones */
+.btn-like, .btn-comment {
+    background-color: #00BFFF; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    margin-left: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.btn-like:hover, .btn-comment:hover {
+    background-color: #0099CC; 
+}

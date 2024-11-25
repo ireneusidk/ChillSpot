@@ -1,0 +1,102 @@
+.recuadro{
+    /* background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+    text-align: left; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
+}
+.encabezado{
+    /* text-align: left; */
+}
+.text{
+    
+    /* text-align: left; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #d242ec, 0 3px 0 #4dd133, 0 4px 0 #1db7b0, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15); */
+    font-family: Arial; 
+    font-size: 30px; 
+    /* COLOR: #1278BF;  */
+    text-shadow: 0px 0px 9px #b936d6;
+    text-align: center;
+    /* width: 40%; */
+}
+
+.about-section {
+  /* Estilos generales para la sección */
+  background-color: #f0f0f0;
+  /* padding: 50px; */
+  text-align: center;
+  background-repeat: no-repeat;
+  
+}
+
+.recuadro {
+  /* Estilos para el recuadro */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5rem;
+  /* margin-bottom: 2rem; */
+  background-color: rgba(128, 128, 128, 0.785);
+}
+.stylea{
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    
+    margin: 0;
+    padding: 0;
+    padding: 2rem 0rem 7rem 0rem;
+    margin-top: auto;
+    padding: auto;
+}
+.stylea loginStyle{
+  padding: 2rem;
+}
+.encabezado {
+  /* Estilos para el encabezado */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text {
+  /* Estilos para el texto */
+  font-size: 20px;
+  line-height: 1.5;
+  /* color: #333; */
+}
+.footer{
+    margin-top: 10%;
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c572b789;
+  padding: 70px;
+  text-align: left;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1; /* El texto ocupará la mayor parte del espacio disponible */
+}
+

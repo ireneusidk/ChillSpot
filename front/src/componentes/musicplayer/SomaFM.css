@@ -1,0 +1,13 @@
+.h1{
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    padding: 0;
+    padding: 0.4rem;
+}
+.aa{
+    background-color: rgba(128, 128, 128, 0.127);
+}
+.aa:hover{
+    background-color: rgba(254, 88, 202, 0.701);
+}

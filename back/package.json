@@ -1,0 +1,26 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "electron": "^33.2.0",
+    "electron-packager": "^17.1.2",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^8.7.3",
+    "react-bootstrap": "^2.10.5"
+  }
+}

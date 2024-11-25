@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* padding-top: 1rem; */
+  padding: 2rem 0rem 1.2rem 0rem;
+}
+
+
+.menu a:hover{
+  color: #5c8d67;
+  background-color: #333333;
+}
+.Button{
+  background-color: #E63946;
+}
+.Boton{
+  /* background-color: white; */
+  border-radius: 5px;
+}
+
+/* Menu.css */
+.menu {
+  background-color: #333; /* Fondo oscuro */
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* .menu ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+} */
+
+.menu ul li {
+  font-family: monospace;
+  list-style: none;
+}
+
+.menu ul li a, .menu ul li button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover, .menu ul li button:hover {
+  color: #f4a261;
+}
+
+/* Icono de modo oscuro/claro */
+.Boton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .menu.active ul {
+    display: flex;
+  }
+
+  .menu .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+}

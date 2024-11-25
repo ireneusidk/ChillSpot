@@ -1,0 +1,51 @@
+
+/* Asegúrate de que el body y html ocupen toda la altura de la ventana */
+body, html {
+  height: 100%; /* Ocupa toda la altura */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal de la aplicación */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esto asegura que el contenedor ocupe al menos el 100% de la altura */
+}
+
+/* El contenido principal ocupará el espacio disponible entre el encabezado y el footer */
+main {
+  flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
+}
+
+/* Estilos del footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+ .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+ .footer-links a:hover {
+  color: #00bcd4;
+}
+
+

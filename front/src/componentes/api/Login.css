@@ -1,0 +1,205 @@
+/* .pass{
+    margin-bottom: 30%;
+    padding-right: 3rem;
+} */
+/* form input{
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin-right: 0.2rem;
+}
+form button{
+    margin-left: 1rem;
+}
+h2{
+font-family: 'Courier New', Courier, monospace;
+padding: 2rem;
+color: rgb(132, 105, 238);
+} */
+/* .Button{
+    margin-right: 1rem;
+} */
+/* .Button1{
+    border-radius: 5px;
+    background-color: rgb(58, 58, 198);
+}
+.border{
+    border-radius: 1rem;
+    padding: 5rem;
+    margin-top: 7rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    background-color: rgba(111, 114, 114, 0.342);
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url("/000000.png"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: #1a1a1a; Fondo oscuro */
+  }
+  .personaje-chiquito {
+    position: absolute;
+    width: 15vw; /* Ancho relativo */
+    max-width: 200px; /* Máximo tamaño */
+    top: 38vh; /* Posición inicial */
+    left: 60vw; /* Posición inicial */
+    z-index: 10; /* Por debajo del login */
+    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px blue) drop-shadow(0 0 15px green);
+    animation: rgb-contorno 3s infinite;
+  }
+  .contenedor {
+    position: relative;
+  }
+  
+  .login-container {
+    position: relative;
+    z-index: 20; /* Mayor que el z-index de la imagen */
+  }
+  .rgb-contorno {
+    width: 15vw; /* Ancho relativo al ancho de la ventana */
+  max-width: 200px; /* Límite máximo para evitar que sea demasiado grande */
+  position: absolute; /* Ajustar posición */
+  top: 38vh; /* Separación desde la parte superior (relativa a la altura de la ventana) */
+  left: 60vw; /* Separación desde el lado izquierdo */
+  z-index: 10;
+  
+  /* Borde animado como resplandor */
+  filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px blue) drop-shadow(0 0 15px green);
+  animation: rgb-contorno 3s infinite;
+}
+
+@keyframes rgb-contorno {
+  0% {
+    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px blue) drop-shadow(0 0 15px green);
+  }
+  33% {
+    filter: drop-shadow(0 0 5px blue) drop-shadow(0 0 10px green) drop-shadow(0 0 15px red);
+  }
+  66% {
+    filter: drop-shadow(0 0 5px green) drop-shadow(0 0 10px red) drop-shadow(0 0 15px blue);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px blue) drop-shadow(0 0 15px green);
+  }
+}
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 20; /* Mayor que el z-index de la imagen */
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    color: #00ff88; /* Color neón */
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #007acc;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292929;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);    
+  }
+  
+  .login-input {
+    width: 250px;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #00ff88;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .login-input::placeholder {
+    color: #777;
+  }
+  
+  .login-input:focus {
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 8px #00ff88;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #00ff88;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #007acc;
+    color: #fff;
+    box-shadow: 0 0 10px #007acc, 0 0 15px #00ff88;
+  }
+  @media (min-width: 1025px) {
+    .personaje-chiquito {
+      top: 40vh; /* Baja la imagen para evitar superposición */
+      left: 60vw; /* Centra más la imagen */
+      width: 20vw;
+    }
+    .p{
+      color: rgb(0, 0, 0);
+      top: 38vh; /* Baja la imagen para evitar superposición */
+      left: 60vw; /* Centra más la imagen */
+      width: 20vw;
+    }
+  }
+  @media (max-width: 1024px) {
+    .personaje-chiquito {
+      top: 40vh; /* Baja la imagen para evitar superposición */
+      left: 74vw; /* Centra más la imagen */
+      width: 20vw;
+    }
+    .p{
+      color: rgb(0, 0, 0);
+      top: 38vh; /* Baja la imagen para evitar superposición */
+      left: 74vw; /* Centra más la imagen */
+      width: 20vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .personaje-chiquito {
+      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+    }
+    .p{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .personaje-chiquito {
+      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+    }
+    .p{
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    .personaje-chiquito {
+      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+    }
+    .p{
+      display: none;
+    }
+  }

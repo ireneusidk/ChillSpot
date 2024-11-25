@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.inicio {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-bottom: 2rem;
+}
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(133, 132, 132);
+    padding: 0;
+}
+.posts-container {
+    display: flex;
+    flex-direction: column; /* Coloca los posts en columna */
+    align-items: center; /* Centra horizontalmente cada post */
+    width: 60%; /* O un ancho específico si lo deseas */
+    max-width: 800px; 
+    border: solid rgba(60, 60, 60, 0.404) 2px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-width: 50%;
+    /* max-height: 50%; */
+}
+.img{
+    /* border: 4px solid rgba(0, 0, 0, 0.115); */
+    border-radius: 4px;
+    padding: 0;
+    padding-bottom: 0;
+}
+.btn-like, .btn-comment, .btn-delete {
+    background-color: #00BFFF; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    margin-left: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.btn-delete{
+    background-color: red;
+}
+.btn-delete:hover{
+    background-color: green;
+}
+.p{
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem ;
+}
+
+.btn-like {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-like:hover {
+    background-color: #0056b3;
+  }
