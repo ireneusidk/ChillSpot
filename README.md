@@ -1,7 +1,7 @@
 ChillSpot 🎮🎨
 
 ChillSpot es una página web estilo red social enfocada en el arte y el gaming. Permite a los usuarios compartir imágenes acompañadas de comentarios sobre sus "obras de arte" o jugadas que quieran mostrar a la comunidad.
-
+-------------------------------------------------------------------------------------------------------------------------
 🚀 Detalles Técnicos
 
 El proyecto utiliza el stack MERN:
@@ -11,11 +11,15 @@ Backend: Node.js, Express.
 Frontend: React, React Router, CSS.
 Autenticación: CORS y Express Sessions.
 
+------------------------------------------------------------------------------------------------------------------------
+
 🛠 Estructura del Proyecto
 
 Frontend: Código dentro de la carpeta front/.
 
 Backend: Código dentro de la carpeta back/.
+
+-------------------------------------------------------------------------------------------------------------------------
 
 ⚙️ Instalación
 
@@ -52,6 +56,8 @@ bash
 Copiar código
 npm start  
 
+-------------------------------------------------------------------------------------------------------------------------
+
 ✨ Funcionalidades
 
 Posteos:
@@ -65,6 +71,8 @@ Inicio de sesión: Accede a secciones protegidas y publica contenido.
 Cerrar sesión: Sal del sistema y navega en modo invitado.
 Extras:
 ChillCorner: Juega minijuegos mientras navegas por la página.
+
+-------------------------------------------------------------------------------------------------------------------------
 
 📡 Endpoints del Backend
 
@@ -88,9 +96,12 @@ Registra un nuevo usuario en la base de datos.
 POST /api/user/logout
 Cierra sesión del usuario autenticado.
 
+-------------------------------------------------------------------------------------------------------------------------
+
 🔧 Configuraciones Adicionales
 
 CORS: Configura el origin para aceptar peticiones del frontend desplegado en Render.
 Sesiones: Utiliza cookies para gestionar el inicio de sesión.
 
-
+-------------------------------------------------------------------------------------------------------------------------
+Gracias por leer 🌸
