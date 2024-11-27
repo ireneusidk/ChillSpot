@@ -17,7 +17,7 @@ const ContactForm = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/api/send-email', mailData);
+      const response = await axios.post('https://chillspot-84lu.onrender.com/api/send-email', mailData);
       console.log('Correo enviado:', response.data);
       window.location.reload();
     } catch (error) {
