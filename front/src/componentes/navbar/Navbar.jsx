@@ -1,6 +1,4 @@
 import React from 'react';
-// import "./Navbar.css"
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 

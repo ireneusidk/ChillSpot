@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
 /// Obtener todas las publicaciones
 router.get('/', async (req, res) => {
   try {
-    const posts = await Post.find().sort({ createdAt: -1 }); // Ordenar por createdAt descendente
+    const posts = await Post.find().sort({ createdAt: -1 }); // Ordenar por  descendente
     res.status(200).json(posts); // Responder con los posts
   } catch (error) {
     res.status(500).send(error.message); // Manejo de errores

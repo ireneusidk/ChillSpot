@@ -1,44 +1,7 @@
-/* .pass{
-    margin-bottom: 30%;
-    padding-right: 3rem;
-} */
-/* form input{
-    padding: 0.7rem;
-    border-radius: 5px;
-    margin-right: 0.2rem;
-}
-form button{
-    margin-left: 1rem;
-}
-h2{
-font-family: 'Courier New', Courier, monospace;
-padding: 2rem;
-color: rgb(132, 105, 238);
-} */
-/* .Button{
-    margin-right: 1rem;
-} */
-/* .Button1{
-    border-radius: 5px;
-    background-color: rgb(58, 58, 198);
-}
-.border{
-    border-radius: 1rem;
-    padding: 5rem;
-    margin-top: 7rem;
-    margin-right: 20rem;
-    margin-left: 20rem;
-    background-color: rgba(111, 114, 114, 0.342);
-} */
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    /* background-image: url("/000000.png"); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-color: #1a1a1a; Fondo oscuro */
   }
   .personaje-chiquito {
     position: absolute;
@@ -56,14 +19,14 @@ body {
   
   .login-container {
     position: relative;
-    z-index: 20; /* Mayor que el z-index de la imagen */
+    z-index: 20; 
   }
   .rgb-contorno {
-    width: 15vw; /* Ancho relativo al ancho de la ventana */
-  max-width: 200px; /* Límite máximo para evitar que sea demasiado grande */
-  position: absolute; /* Ajustar posición */
-  top: 38vh; /* Separación desde la parte superior (relativa a la altura de la ventana) */
-  left: 60vw; /* Separación desde el lado izquierdo */
+    width: 15vw; 
+  max-width: 200px; 
+  position: absolute; 
+  top: 38vh;
+  left: 60vw; 
   z-index: 10;
   
   /* Borde animado como resplandor */
@@ -153,34 +116,34 @@ body {
   }
   @media (min-width: 1025px) {
     .personaje-chiquito {
-      top: 40vh; /* Baja la imagen para evitar superposición */
-      left: 60vw; /* Centra más la imagen */
+      top: 40vh; 
+      left: 60vw; 
       width: 20vw;
     }
     .p{
       color: rgb(0, 0, 0);
-      top: 38vh; /* Baja la imagen para evitar superposición */
-      left: 60vw; /* Centra más la imagen */
+      top: 38vh; 
+      left: 60vw; 
       width: 20vw;
     }
   }
   @media (max-width: 1024px) {
     .personaje-chiquito {
-      top: 40vh; /* Baja la imagen para evitar superposición */
-      left: 74vw; /* Centra más la imagen */
+      top: 40vh; 
+      left: 74vw;
       width: 20vw;
     }
     .p{
       color: rgb(0, 0, 0);
-      top: 38vh; /* Baja la imagen para evitar superposición */
-      left: 74vw; /* Centra más la imagen */
+      top: 38vh; 
+      left: 74vw;
       width: 20vw;
     }
   }
   
   @media (max-width: 768px) {
     .personaje-chiquito {
-      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+      display: none; 
     }
     .p{
       display: none;
@@ -189,7 +152,7 @@ body {
   
   @media (max-width: 480px) {
     .personaje-chiquito {
-      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+      display: none; 
     }
     .p{
       display: none;
@@ -197,7 +160,7 @@ body {
   }
   @media (max-width: 400px) {
     .personaje-chiquito {
-      display: none; /* Oculta la imagen en pantallas muy pequeñas */
+      display: none; 
     }
     .p{
       display: none;

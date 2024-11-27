@@ -7,7 +7,7 @@ function Footer() {
     <nav className="footer-links">
       <a href="/">Inicio</a>
       <a href="/about">Acerca de</a>
-      <a href="#contact">Contacto</a>
+      <a href="/contacto">Contacto</a>
       <a href="/policies">Políticas de Privacidad</a>
     </nav>
   </footer>

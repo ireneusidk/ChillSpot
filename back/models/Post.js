@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+//Esquema para los post 
 const postSchema = new Schema(
   {
      author: { type: String, required: true },

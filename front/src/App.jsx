@@ -21,6 +21,7 @@ import About from './componentes/About/About';
 import Policies from './componentes/Policies/Policies';
 import Perfil from './componentes/perfil/Perfil';
 import Profile from './componentes/Profile/Profile';
+import ContactForm from './componentes/Contacto/ContactForm';
 function App() {
   return (
     <Router>
@@ -61,8 +62,8 @@ function AppContent() {
           <Route path="/chillcorner" element={<Game />} />
           <Route path="/about" element={<About />} />
           <Route path="/policies" element={<Policies />} />
-          {/* <Route path="/me" element={<Perfil />} /> */}
-          {/* <Route path="/login"></Route> */}
+          <Route path="/contacto" element={<ContactForm/>} />
+          
       
         </Routes>
         
