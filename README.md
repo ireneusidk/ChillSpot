@@ -26,16 +26,15 @@ Backend: Código dentro de la carpeta back/.
 Backend:
 
 Navega a la carpeta del backend:
-bash
-Copiar código
 cd ./back  
+
 Instala las dependencias:
-bash
-Copiar código
-npm install  
+npm install
+npm start (render)
+node app
 Configura las variables de entorno creando un archivo .env con el siguiente contenido:
+
 env
-Copiar código
 MONGODB_URI=mongodb+srv://nombreusuario:contraseña@test.babiouw.mongodb.net/auth?retryWrites=true&w=majority  
 PORT=8080  
 SESSION_SECRET=f7e6c3b95af23464a3c4e6c67b6d92757b1b7c187df0c7e6e0cb7c90e4cb5ed3  
@@ -44,17 +43,13 @@ CLIENT_ORIGIN=https://mi-app-en-render.com
 Frontend:
 
 Navega a la carpeta del frontend:
-bash
-Copiar código
-cd ./front  
+cd ./front
+
 Instala las dependencias:
-bash
-Copiar código
 npm install  
 Inicia la aplicación:
-bash
-Copiar código
-npm start  
+npm run dev (desde local)
+npm run build && npm run preview (desde Render)
 
 -------------------------------------------------------------------------------------------------------------------------
 
