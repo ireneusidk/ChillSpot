@@ -15,19 +15,22 @@ const PostForm = () => {
   };
   
   return (
-    <form className="form" onSubmit={handleSubmit}>
+<form className="form" onSubmit={handleSubmit}>
       <h1 className='crear'>Crea tu publicacion</h1>
+      <label htmlFor="titulo">Titulo: </label>
       <input className='input'
         type="text" 
         value={title} 
         onChange={(e) => setTitle(e.target.value)} 
         placeholder="Título de la publicación" 
       />
+      <label htmlFor="Texto">Escribe tu texto: </label>
       <textarea 
         value={content} 
         onChange={(e) => setContent(e.target.value)} 
         placeholder="Escribe una publicación..." 
       />
+      <label htmlFor="Texto">URL de tu imagen:</label>
       <input className='input'
         type="text" 
         value={image} 
