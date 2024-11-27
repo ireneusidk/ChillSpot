@@ -73,10 +73,11 @@ router.put('/:id/toggle-like', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const { title } = req.body;
-    const { content } = req.body; 
+    const { content } = req.body;
+    const { image } = req.body;
     const post = await Post.findByIdAndUpdate(
       req.params.id,
-      { title, content },
+      { title, content, image },
       { new: true } // devuelve documento actualizado
     );
     if (!post) {
