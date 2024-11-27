@@ -8,7 +8,7 @@ const PostForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/posts', { title, content, image });
+    await axios.post('https://chillspot-84lu.onrender.com/api/posts', { title, content, image });
     setTitle('');
     setContent('');
     setImage('');
