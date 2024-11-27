@@ -117,7 +117,22 @@ const Game = () => {
     <div >
       <canvas className="cuadro" id="gameCanvas" width="400" height="400"></canvas>
       <p>Puntuación: <span id="score">0</span></p>
+      <div className="instructions">
+        <h3>Instrucciones para jugar:</h3>
+        <p>
+          Usa las teclas de flecha en tu teclado para mover la serpiente: 
+          <br />
+          - Flecha arriba: Mover hacia arriba
+          <br />
+          - Flecha abajo: Mover hacia abajo
+          <br />
+          - Flecha izquierda: Mover hacia la izquierda
+          <br />
+          - Flecha derecha: Mover hacia la derecha
+        </p>
+      </div>
     </div>
+    
   );
 }
 
