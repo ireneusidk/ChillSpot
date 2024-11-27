@@ -54,3 +54,27 @@
   .form-button1:hover {
     background-color: #357ab7;
   }
+ @media (max-width: 600px) {
+    .aaaa {
+        max-width:90%;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  
+    .form-input1 {
+        max-width:90%;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .form-button1 {
+        max-width:90%;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .form-label1 {
+        max-width:90%;
+      font-size: 14px;
+    }
+  }
