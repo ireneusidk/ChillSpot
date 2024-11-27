@@ -13,7 +13,7 @@ function Inicio() {
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/posts');
+        const response = await fetch('https://chillspot-84lu.onrender.com/api/posts');
         const data = await response.json();
         console.log('Datos obtenidos:', data);
         setPublicaciones(data);
@@ -28,7 +28,7 @@ function Inicio() {
   const handleUpdate = async (id) => {
     try {
       const updatedPost = { title: nuevoTitulo, content: nuevoContent, image: nuevoImagen };
-      const response = await axios.put(`http://localhost:8080/api/posts/${id}`, updatedPost);
+      const response = await axios.put(`https://chillspot-84lu.onrender.com/api/posts/${id}`, updatedPost);
       setPublicaciones(
         publicaciones.map((post) =>
           post._id === id ? { ...post, title: nuevoTitulo, content: nuevoContent, image: nuevoImagen } : post
@@ -45,7 +45,7 @@ function Inicio() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/posts/${id}`);
+      await axios.delete(`https://chillspot-84lu.onrender.com/api/posts/${id}`);
       setPublicaciones(publicaciones.filter((publicacion) => publicacion._id !== id));
     } catch (error) {
       console.error('Error al eliminar la publicación:', error);
@@ -54,7 +54,7 @@ function Inicio() {
 
   const handleToggleLike = async (id) => {
     try {
-      const response = await axios.put(`http://localhost:8080/api/posts/${id}/toggle-like`, { userId });
+      const response = await axios.put(`https://chillspot-84lu.onrender.com/api/posts/${id}/toggle-like`, { userId });
       setPublicaciones(publicaciones.map((post) => (post._id === id ? response.data : post)));
     } catch (error) {
       console.error('Error al alternar "Me gusta" en la publicación:', error);
