@@ -16,7 +16,7 @@ const PostForm = () => {
   
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1 className='h1'>Crea tu publicacion</h1>
+      <h1 className='crear'>Crea tu publicacion</h1>
       <input className='input'
         type="text" 
         value={title} 
