@@ -54,7 +54,7 @@
   .form-button1:hover {
     background-color: #357ab7;
   }
- @media (max-width: 600px) {
+  @media (max-width: 600px) {
     .aaaa {
         max-width:90%;
       padding: 15px;
